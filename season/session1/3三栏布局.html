@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>三栏布局</title>
+	<style type="text/css">
+		.wrap{
+			background: #eee;
+			padding: 20px;
+			border: 1px solid #999;
+		}
+		/*找下比较完美的办法*/
+		.clearfix:after{
+			content: " ";
+			display: block;
+			clear: both;
+		}
+		.clearfix{
+			*zoom:1;
+		}
+		.left{
+			float: left;
+			width: 160px;
+			background: #fff;
+			padding: 20px;
+			border: 1px solid #999;
+		}
+		.left img{
+			width: 80px;
+			height: 80px;
+			border: 1px solid #999;
+			float: left;
+			margin-right: 20px;
+		}
+		.right{
+			float: right;
+			width: 80px;
+			background: #fff;
+			padding: 20px 20px 0px 20px;
+			border: 1px solid #999;
+		}
+		.right img{
+			width: 80px;
+			height: 80px;
+			border: 1px solid #999;
+			margin-bottom: 20px;
+		}
+		.middle{
+			border: 1px solid #ccc;
+			margin-left: 240px;
+			margin-right: 160px;
+			padding: 20px;
+			border: 1px solid #999;
+		}
+	</style>
+</head>
+<body>
+<!-->左边固定宽度200和右边120没考虑边框border宽度，考虑了padding20。商量确定后再改<-->
+	<div class="wrap clearfix">
+		<div class="left"><img src="images/1.jpg">Maker团队，真的是maker团队哦</div>
+		<div class="right">
+			<img src="images/1.jpg">
+			<img src="images/1.jpg">
+			<img src="images/1.jpg">
+			<img src="images/1.jpg">
+			<img src="images/1.jpg">
+		</div>
+		<div class="middle">团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，团队介绍，</div>
+	</div>
+</body>
+</html>

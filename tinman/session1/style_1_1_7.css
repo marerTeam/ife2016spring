@@ -1,0 +1,204 @@
+/* 
+* @Author: liujinyan
+* @Date:   2016-03-12 16:06:13
+* @Last Modified by:   liujinyan
+* @Last Modified time: 2016-03-23 01:07:29
+*/
+@charset "utf-8";
+a{
+    text-decoration:none;
+}
+.warp{
+    min-width: 1280px;
+    margin:0 auto;
+}
+.header{
+    margin: 0 auto;
+    width: 1280px;
+    height: 56px;
+}
+.logo{
+    float: left;
+    margin-left:59px;
+    margin-top: 13px;
+}
+.header>h1{
+    float: left;
+    margin-top: 18px;
+    margin-left:11px;
+    font:21px/1em "SimHei";
+}
+.nav>ul{
+    float:left;
+    margin-left:495px;
+}
+
+.nav>ul>li{
+    display: inline-block;
+    margin: 17px 18px 0px 18px;   
+    text-align: center;
+}
+.nav>ul>li>a{
+    display: inline-block;
+    width:65px;
+    height:35px;
+    font:14px/1em "Micosoft YaHei";
+    color: #83868d;
+}
+.nav>ul>li>a:visited{
+    color: #83868d;
+ }
+.nav>ul>li:hover{
+    background: url("img/task_1_1_7/underline.png") no-repeat scroll 0 34px;
+}
+.nav>ul>li:hover a{
+    color: #e74f4d;
+}
+.login{
+    display: inline-block;
+    margin-left:8px;
+    margin-top: 16px;
+    height: 56px;
+}
+.login>img,.login>a
+{
+    display: inline-block;
+    float:left;
+}
+.login>a{
+    margin-top: 1px;
+    margin-left: 5px;
+    text-decoration:none;
+    font:14px/1em "Micosoft YaHei";
+    color: #e74f4d;    
+}
+.main1{
+    margin:0 auto;
+    min-width:1280px;
+    height:692px;
+    background: url("img/task_1_1_7/background.png") no-repeat ;
+    background-size:cover;
+}
+.main1-mask{
+    position: relative;
+    margin:0 auto;
+    min-width:1280px;
+    height:692px;
+    background: url("img/task_1_1_7/background_mask.png") no-repeat;
+    background-size:cover;
+}
+.main1-mask>h2{
+    position:absolute;
+    top:230px;
+    left:117px;
+    color:#fff;
+    font-size: 60px;
+    font-family: "Micosoft YaHei";
+}
+.main1-mask>h2+p{
+    position:absolute;
+    top:310px;
+    left:124px;
+    color:#fff;
+    font-size: 21px;
+    font-family: "Micosoft YaHei";
+}
+.main1-mask>p+p{
+    position:absolute;
+    top:344px;
+    left:124px;
+    color:#fff;
+    font-size: 21px;
+    font-family: "Micosoft YaHei";
+}
+.main1-mask>a{
+    display:block;
+    position:absolute;
+    top:430px;
+    left:126px;
+    width: 330px;
+    height: 63px;
+    color:#fff;
+    font-family: "Micosoft YaHei";
+    font-size: 30px;
+    text-align: center;
+    background-color: #e74f4d;
+    line-height: 63px;
+    overflow: hidden;
+}
+.main2{
+    min-width:1280px;
+    height: 249px;
+}
+.main2-content1,.main2-content2,.main2-content3,.main2-content4{
+    float:left;
+    width:25%;
+    text-align: center;
+}
+.main2-content1 .icon{
+    height:132px;
+    background: url("img/task_1_1_7/icon1.png") no-repeat center;
+}
+.main2-content2 .icon{
+    height:132px;
+    background: url("img/task_1_1_7/icon2.png") no-repeat center;
+}
+.main2-content3 .icon{
+    height:132px;
+    background: url("img/task_1_1_7/icon3.png") no-repeat center;
+}
+.main2-content4 .icon{
+    height:132px;
+    background: url("img/task_1_1_7/icon4.png") no-repeat center;
+}
+.content>div{
+    display: inline-block;
+    font:14px/1.29em "SimHei";
+}
+.main2-splitline{
+    float: right;
+    margin-right:-1px;
+    width: 2px;
+    height: 52px;
+    background-color: #aaa;
+}
+.main3{
+    min-width: 1280px;
+    height: 360px;
+    background: url("img/task_1_1_7/3_background.png") no-repeat;
+    background-size: cover;
+}
+.main3>img{
+    position: relative;
+    top: 96px;
+    display: block;
+    margin:0 auto;
+}
+.main3>p{
+    position: relative;
+    top: 133px;
+    text-align: center;
+    font: 54px/1em "SimHei";
+    color: #a1a1a1;
+}
+.main4{
+    min-width: 1280px;
+    height: 340px;
+    background: url("img/task_1_1_7/4_back.png") no-repeat;
+    background-size: cover;    
+}
+.main4-mask{
+    min-width: 1280px;
+    height: 340px;
+    background: url("img/task_1_1_7/4_mask.png") no-repeat;
+    background-size: cover;     
+}
+.select-style select{
+    background: transparent;
+    width: 236px;
+    border: 1px solid #be4e48;
+    -webkit-appearance: none; /*for chrome*/
+}
+.select-style{
+    width: 216px;
+}

@@ -1,0 +1,152 @@
+/* 
+* @Author: liujinyan
+* @Date:   2016-03-12 16:06:13
+* @Last Modified by:   liujinyan
+* @Last Modified time: 2016-03-17 13:45:22
+*/
+@charset "UTF-8";
+/* CSS set main*/
+.article-main,.image-main,.sidebar-main{
+    border:1px solid #999;
+    padding:20px;
+    margin:20px;
+    background-color: white;
+    font-family: sans-serif;
+    box-shadow:2px 5px 5px #666;
+    overflow: auto;
+}
+.sidebar-title1,.article-title1{
+    font-size: 16px; 
+    font-weight:bold;
+    line-height: 32px;
+    color:black;
+}
+.sidebar-title2,.article-title2{
+    font-size: 14px; 
+    line-height: 28px;
+    color:#666;
+}
+/* CSS set main over*/
+/* CSS set header*/
+.header{
+    background-color: #666;
+    overflow: hidden;
+    color:black;
+}
+.header-title{
+    float:left;
+    font-size: 24px;
+    color:white;
+}
+.header-nav-item{
+    float:right;
+    margin-right:50px;
+    list-style-type: square;
+}
+.header-nav-item>li{
+    float: left;
+    margin:10px;
+}
+.header-nav-item>li>a{
+    color:white;
+}
+/* CSS set header over*/
+/* CSS set article*/
+.article-info{
+    font-size: 12px; 
+    line-height: 24px;
+    color:#666;    
+}
+.article-content{
+    text-indent:2em;
+}
+.article-ul{
+    list-style: none;
+}
+.image-title{
+    font-size: 16px;
+    font-weight:bold;
+}
+.image-list{
+    width:400px;
+}
+.dd1,.dd2{
+    text-align: center;
+    margin-left:50px;
+}
+.dd1{
+    border-top:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    margin:20px 20px 0px 20px;
+    padding:10px;
+}
+.dd2{
+    border-bottom:1px solid #ccc;
+    border-left:1px solid #ccc;
+    border-right:1px solid #ccc;
+    margin:0px 20px 20px 20px;
+}
+.ol-list{
+    text-indent:0;
+    margin-left:50px;
+}
+.table-list{
+    width:100%;
+    table-layout:fixed;
+}
+.table-list caption{
+    font-size:14px;
+    font-weight: bold;
+}
+.table-list th{
+    background-color: #ccc;
+}
+.table-list tfoot{
+    background-color: #666;
+}
+
+/* CSS set article over*/
+/* CSS set sidebar*/
+.sidebar-fields{
+    overflow:hidden;
+    width:50%;
+    margin:0 auto;
+}
+.sidebar-fields ul{
+    list-style: none;
+}
+.sidebar-fields li>label{
+    width:30%;
+    display:inline-block;
+    float:left;
+}
+.sidebar-fields li p{
+    color:#666;
+}
+.sidebar-fields li input[type="submit"]{
+    width:100%;
+    background-color: blue;
+}
+.sidebar-fields li input[type="radio"]{
+    margin:0 28px;
+}
+.sidebar-fields li select{
+    width:180px;
+}
+.sidebar-fields li input[type="checkbox"]{
+    margin:0 8px;
+}
+.sidebar-fields li textarea{
+    width:180px;
+}
+/* CSS set sidebar over*/
+.footer{
+    height:30px;
+    text-align: center;
+    background-color: black;
+    color:white;
+    font-size:16px;
+    padding:6px;
+}
+/* CSS set footer over*/

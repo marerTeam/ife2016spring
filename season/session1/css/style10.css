@@ -1,0 +1,41 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.box1,.box2,.box3,.box4{
+	padding: 20px;
+	width: 150px;
+	border: 1px solid #f00;
+}
+.box1{
+	height: 120px;
+}
+.box2{
+	height: 100px;
+}
+.box3{
+	height: 40px;
+}
+.box4{
+	height: 200px;
+	border: 1px solid #0f0;
+}
+.container{
+	padding: 20px;
+	display: flex;
+	display: -webkit-flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+@media screen and (max-width: 640px){
+	.container{
+		align-items: flex-start;
+	}
+	.box4{
+		order: -1;
+		
+	}
+}

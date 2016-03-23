@@ -1,0 +1,24 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	width: 1200px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	border:1px solid #000;
+}
+#root *{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #000;
+	margin: 3px;
+	padding: 10px 5px;
+	background-color: #fff;
+}
+.control{
+	width: 400px;
+	margin: 20px auto;
+}

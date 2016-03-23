@@ -1,0 +1,35 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+table {
+	border:1px solid #ccc;
+}
+table th{
+	background: black;
+	color: #fff;
+}
+table tr:nth-child(odd){
+	background: #ccc;
+}
+table tr:nth-child(2){
+	color: red;
+}
+table tr:nth-child(3){
+	color: red;
+}
+table tr:nth-child(4){
+	color: red;
+}
+
+.inputbox{
+	margin-top: 20px;
+}
+input{
+	width: 100px;
+}
+input:focus{
+	box-shadow: 5px #ccc;
+	width: 200px;
+	transition: width 2s linear;
+}

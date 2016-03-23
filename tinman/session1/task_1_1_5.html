@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>ife-2016-spring-task_1_1_2</title>
+        <link rel="stylesheet" type="text/css" href="public.css" />
+        <link rel="stylesheet" type="text/css" href="style_1_1_5.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="header-container">
+                <div class="header-title">
+                    <h1>网站一级标题</h1>
+                </div>
+                <div class="header-nav">
+                    <ul class="header-nav-item">
+                        <li><a href="#">导航链接一</a></li>
+                        <li><a href="#">导航链接二</a></li>
+                        <li><a href="#">导航链接三</a></li>
+                        <li><a href="#">导航链接四</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-warp">
+            <div class="sidebar-main">
+                <form action="task_1_1_1_submit" method="get" accept-charset="utf-8">
+                    <div class="sidebar-title1">
+                        <h2>这里以后是一个侧栏，这是侧栏的标题</h2>
+                    </div>
+                    <div class="sidebar-title2">
+                        <h2>侧栏注册窗口标题</h2>
+                    </div>
+                    <div class="sidebar-fields">
+                        <table class="form-list">
+                            <tbody>
+                                <tr>
+                                    <td class="tips"><label for="email">请输入邮箱地址：</label></td>
+                                    <td class="items"><input type="email" value="这是一个文本输入框" id="email"/></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="items"><label for="email">邮箱地址按要求格式输入</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="tips"><label for="pwd">请输入密码：</label></td>
+                                    <td class="items"><input type="password" value="这是一个文本输入框" id="pwd"/></td>
+                                </tr>
+                                <tr>
+                                    <td class="tips"><label for="repwd">请重复输入密码：</label></td>
+                                    <td class="items"><input type="password" value="这是一个文本输入框" id="repwd" /></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td class="items"><label  for="repwd">密码请为6-16位英文数字</label></td>
+                                </tr>
+                                <tr>
+                                    <td class="tips"><label for="sex">性别：</label></td>
+                                    <td class="items">                                    
+                                    <input type="radio" name="sex" value="男" id="male">
+                                    <label for="male">男</label>
+                                    <input type="radio" name="sex" value="女" id="female"/>
+                                    <label for="female">女</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="tips"><label for="city">城市：</label></td>
+                                <td class="items">                                <select name="城市" id="city">
+                                    <option value="北京">北京</option>
+                                    <option value="上海">上海</option>
+                                    <option value="大连">大连</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="tips"><label for="hobby">爱好：</label></td>
+                            <td class="items">                                
+                            <div id="hobby">
+                                <input type="checkbox" name="爱好" value="运动" id="sport" /><label for="sport">运动</label>
+                                <input type="checkbox" name="爱好" value="艺术" id="art"/><label for="art">艺术</label>
+                                <input type="checkbox" name="爱好" value="科学" id="science"/><label for="science">科学</label>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="tips"><label for="mydesc">个人描述：</label></td>
+                        <td class="items">
+                        <textarea name="个人描述" cols="18" rows="2" id="mydesc">这是一个多行输入框，输入您的个人描述</textarea></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="确认提交" /></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+</div>
+</div>
+<div class="main">
+<div class="articles-warp">
+    <div class="article-main">
+        <div class="article-title1">
+            <h2>文章一级标题</h2>
+        </div>
+        <div class="article-title2">
+            <h2>文章二级标题</h2>
+        </div>
+        <div class="article-info">
+            <p>文章作者 文章发表时间</p>
+        </div>
+        <div class="article-content">
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />
+            的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br />
+            这是一个很长很长的段落,这是一个很长很长的段落，
+            <a href="http://ife.baidu.com" target="_blank">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，
+            <strong>这里有个粗体字</strong>
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
+            <div class="article-img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+            <br />
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            <strong>这里有个粗体字</strong>
+            这是一个很长很长的段落，这是一个很长很长的段落，
+            <a href="http://ife.baidu.com" target="_blank">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+        </div>
+    </div>
+    <div class="article-main">
+        <div class="article-title1">
+            <h2>另一篇文章一级标题</h2>
+        </div>
+        <div class="article-title2">
+            <h2>文章二级标题</h2>
+        </div>
+        <div class="article-info">
+            <p>文章作者 文章发表时间</p>
+        </div>
+        <div class="article-content">
+            <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+            <br />
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，
+            这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了
+            <br />
+            这是一个很长很长的段落，这是一个很长很长的段落，
+            <a href="http://ife.baidu.com" target="_blank">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。
+            </p>
+            <div class="article-img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            <ul class="article-ul">
+                <li>列表项目一</li>
+                <li>列表项目二</li>
+                <li>列表项目三</li>
+            </ul>
+        </div>
+    </div>
+    <div class="image-main">
+        <div class="image-title"><h2>图片</h2></div>
+        <div class="image-list">
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+            <div class="image-item">
+                <div class="tips">好看的图片</div>
+                <div class="img"><img src="img/task_1_1_1.jpg" alt="测试图片" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="article-main">
+        <div class="article-title1">
+            <h2>最后一篇文章一级标题</h2>
+        </div>
+        <div class="article-title2">
+            <h2>文章二级标题</h2>
+        </div>
+        <div class="article-info">
+            <p>文章作者 文章发表时间</p>
+        </div>
+        <div class="article-content">
+            <div class="rank">
+                <ol class="ol-list">
+                    <li>排名1</li>
+                    <li>排名2</li>
+                    <li>排名3</li>
+                </ol>
+            </div>
+            <table border="1" class="table-list">
+                <caption>下面是一个表格，给表格加了一个border="1"好让你看出是一个表格</caption>
+                <thead>
+                    <th>表头</th>
+                    <th>表头</th>
+                    <th>表头</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                    <tr>
+                        <td>表内容单元格</td>
+                        <td>表内容单元格</td>
+                        <td><a href="#">操作</a></td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                <tr>
+                    <td>总计</td>
+                    <td colspan="2">1000</td>
+                </tr>
+                </tfoot>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footer">版权所有&copy;</div>
+</body>
+</html>

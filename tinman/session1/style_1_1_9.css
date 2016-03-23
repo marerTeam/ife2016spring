@@ -1,0 +1,56 @@
+/* 
+* @Author: liujinyan
+* @Date:   2016-03-12 16:06:13
+* @Last Modified by:   liujinyan
+* @Last Modified time: 2016-03-14 15:02:30
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+.main,.team-name,.desc,.leaguer,img{
+    border: solid 1px #999;
+}
+.main,.team-name,.desc,.leaguer{
+    background-color: white;
+}
+.main,.team-name,.desc{
+    padding: 20px;
+}
+.main,img{
+    background-color: #eee; 
+}
+.main{
+    overflow:hidden;
+    min-width: 480px;
+}
+.team-name{
+    float:left;
+    width:158px;
+    top:100px;
+}
+.team-name>img{
+    float:left;
+    height: 80px;
+    width: 80px;
+}
+.team-name>p{
+    float:left;
+    padding:0 0 0 20px;
+}
+.desc{
+    margin:0 140px 0 220px;
+}
+.desc>p{
+    word-break:break-all;
+}
+.leaguer{
+    float:right;
+    width:118px;
+}
+.leaguer>img{
+    display:block;
+    margin: 18px;
+    height: 80px;
+    width: 80px;
+}

@@ -1,0 +1,29 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#root {
+	width: 1050px;
+	display: flex;
+	flex-direction: row;
+	margin: auto;
+	padding: 10px 5px;
+	border:1px solid #000;
+}
+#root *{
+	display: flex;
+	flex-direction: row;
+	border: 1px solid #000;
+	margin: 3px;
+	padding: 10px 5px;
+	background-color: #fff;
+}
+.layer3{
+	width: 100px;
+	height: 100px;
+}
+#control{
+	width: 200px;
+	margin: 15px auto;
+}
