@@ -30,6 +30,11 @@ window.onload = function(){
 	}
 	//动画效果
 	function animation(arr){
+		clearInterval(t);
+		var eles = document.getElementsByTagName('*');
+		for(var k = 0;len = eles.length,k<len;k++){
+			eles[k].style.background = '#fff';
+		}
 		var i = 0;
 		t = setInterval(function(){
 			if(i>0){
@@ -56,17 +61,20 @@ window.onload = function(){
 	}
 	
 	var rootObj = $("root");
+	var t = null;
 	addHandler($("preOrder"),'click',function(){
 		arr=[];
 		preOrder(rootObj);
 		animation(arr);
 	});
 	addHandler($("inOrder"),'click',function(){
+		
 		arr=[];
 		inOrder(rootObj);
 		animation(arr);
 	});
 	addHandler($("postOrder"),'click',function(){
+	
 		arr=[];
 		postOrder(rootObj);
 		animation(arr);
