@@ -5,7 +5,8 @@ window.onload = function(){
 	//前序遍历
 	function preOrder(node){
 		result.push(node);
-		nodeContent.push(node.firstChild.nodeValue)//获取当前节点的第一个子文本节点的内容
+		var value = node.firstChild.nodeValue.replace(/(^\s*)|(\s*$)/g, "");
+		nodeContent.push(value)//获取当前节点的第一个子文本节点的内容
 		var childs = node.children;//只获取元素节点
 		for(var j = 0,len = childs.length;j<len;j++){
 			preOrder(childs[j]);
@@ -34,7 +35,6 @@ window.onload = function(){
 				}
 			}		
 		},400);
-
 	}
 	//事件处理
 	function addHandler(element,type,handler){
@@ -46,12 +46,20 @@ window.onload = function(){
 			element['on'+type] = handler;
 		}
 	}
+	//清除之前的效果
+	function clear(){
+		var eles = document.getElementsByTagName('*');
+		for(var k = 0;len = eles.length,k<len;k++){
+			eles[k].style.background = '#fff';
+		}
+	}
 	var rootObj = $('root');
 	var result = [];
 	var nodeContent = [];
 	var t = null;
 	//开始遍历
 	addHandler($("preOrder"),'click',function(){
+		clear();
 		result = [];
 		clearInterval(t);
 		preOrder(rootObj);
@@ -59,6 +67,7 @@ window.onload = function(){
 	});
 	//查找
 	addHandler($("submit"),'click',function(){
+		clear();
 		nodeContent = [];//每次点击都清空
 		var content = $('content').value;
 		if(content){
