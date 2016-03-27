@@ -1,117 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <title>新世界</title>
-    <link rel="stylesheet" type="text/css" href="public.css" />
-    <link rel="stylesheet" type="text/css" href="style_1_1_7.css" />
-</head>
-<body>
-    <div class="warp">
-    <div class="header">
-        <div class="header-left"></div>
-        <div class="logo">
-            <img src="img/task_1_1_7/logo.png" alt="新世界logo" />
+    <head>
+        <meta charset="UTF-8" />
+        <title>新世界</title>
+        <link rel="stylesheet" type="text/css" href="public.css" />
+        <link rel="stylesheet" type="text/css" href="style_1_1_7.css" />
+    </head>
+    <body>
+        <div class="warp">
+            <div class="header" id="header">
+                <div class="header-left"></div>
+                <div class="logo">
+                    <img src="img/task_1_1_7/logo.png" alt="新世界logo" />
+                </div>
+                <h1>新世界</h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#activity">最新活动</a></li>
+                        <li><a href="#main6">项目介绍</a></li>
+                        <li><a href="#main8">爱心社区</a></li>
+                        <li><a href="#about">关于我们</a></li>
+                    </ul>
+                </div>
+                <div class="login">
+                    <img src="img/task_1_1_7/login.png" alt="登录logo" />
+                    <a href="#">登录</a>
+                </div>
+                <div class="header-right"></div>
+            </div>
+            <div class="main1">
+                <div class="main1-mask">
+                    <h2>Time of new life</h2>
+                    <p>新时代，年轻的人们让我们一起</p>
+                    <p>体验新生活，享受新生活</p>
+                    <a href="#">开始体验</a>
+                </div>
+            </div>
         </div>
-        <h1>新世界</h1>
-        <div class="nav">
+        <div class="main2">
+            <div class="main2-content1">
+                <div class="icon"></div>
+                <div class="content">
+                    <div>
+                        <p>打造全新世界观，让你更</p>
+                        <p>爱你的生活</p>
+                    </div>
+                    <div class="main2-splitline"></div>
+                </div>
+            </div>
+            <div class="main2-content2">
+                <div class="icon"></div>
+                <div class="content">
+                    <div>
+                        <p>丰富多彩的公益活动，发</p>
+                        <p>挥新世界的主人公意识</p>
+                    </div>
+                    <div class="main2-splitline"></div>
+                </div>
+            </div>
+            <div class="main2-content3">
+                <div class="icon"></div>
+                <div class="content">
+                    <div>
+                        <p>时尚的新理念，超前体验</p>
+                        <p>未知的生活</p>
+                    </div>
+                    <div class="main2-splitline"></div>
+                </div>
+            </div>
+            <div class="main2-content4">
+                <div class="icon"></div>
+                <div class="content">
+                    <div>
+                        <p>完善的培养机制，培养你</p>
+                        <p>全新的世界观</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main3" id="activity">
+            <img src="img/task_1_1_7/3_icon.png" alt="书籍图片" />
+            <p>关于新世界，你不知道的还有什么？</p>
+        </div>
+        <div class="main4">
+            <div class="main4-mask">
+                <div class="main4-word">
+                    <p class="word-city-activity1">查找新世界城市活动信息</p>
+                    <div class="activity-line"></div>
+                    <p class="word-city-activity2">
+                    每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
+                </div>
+                <div class="main4-select">
+                    <form action="#" method="post">
+                        <div class="select-style">
+                            <div id="contrny" class="select" />
+                                <p>国家</p>
+                                <ul>
+                                    <li id="contrny-china">中国</li>
+                                    <li id="contrny-japan">日本</li>
+                                </ul>
+                            </div>
+                        </div><div class="select-style">
+                            <div id="area" class="select" />
+                                <p>省份</p>
+                                <ul>
+                                    <li id="area-liaoning">辽宁省</li>
+                                    <li id="area-hebei">河北省</li>
+                                    <li id="area-hebei">北京市</li>
+                                    <li id="area-hebei">陕西省</li>
+                                    <li id="area-hebei">内蒙古自治区</li>
+                                    <li id="area-hebei">天津市</li>
+                                </ul>
+                            </div>
+                        </div><div class="select-style">
+                            <div id="city" class="select" />
+                                <p>城市</p>
+                                <ul>
+                                    <li id="city-dalian">大连</li>
+                                    <li id="city-shenyang">沈阳</li>
+                                </ul>
+                            </div>
+                        </div><input class="select-submit" type="submit" value="搜索"/>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="main5" class="main5">
             <ul>
-                <li><a href="#">首页</a></li>
-                <li><a href="#">最新活动</a></li>
-                <li><a href="#">项目介绍</a></li>
-                <li><a href="#">爱心社区</a></li>
-                <li><a href="#">关于我们</a></li>
+                <li>
+                    <img src="img/task_1_1_7/main5_01.png" alt="" />
+                    <h2>北京活动</h2>
+                    <h3>新社区大联盟</h3>
+                </li>
+                <li>
+                    <h2 class="main5-justify">上 海 活 动</h2>
+                    <h3>夜上海新景观探索</h3>
+                    <img src="img/task_1_1_7/main5_02.png" alt="" /></li>
+                <li>
+                    <img src="img/task_1_1_7/main5_03.png" alt="" />
+                    <h2>深圳活动</h2>
+                    <h3>全新海岸线观点站</h3>
+                </li>
+                <li>
+                    <h2>香港活动</h2>
+                    <h3>奢侈消费大派送</h3>
+                    <img src="img/task_1_1_7/main5_04.png" alt="" />
+                </li>
             </ul>
         </div>
-        <div class="login">
-        <img src="img/task_1_1_7/login.png" alt="登录logo" />
-        <a href="#">登录</a>
-        </div>
-        <div class="header-right"></div>
-    </div>
-    <div class="main1">
-        <div class="main1-mask">
-            <h2>Time of new life</h2>
-            <p>新时代，年轻的人们让我们一起</p>
-            <p>体验新生活，享受新生活</p>
-            <a href="#">开始体验</a>
-        </div>
-    </div>
-    </div>
-    <div class="main2">
-        <div class="main2-content1">
-            <div class="icon"></div>
-            <div class="content">
-                <div>
-                <p>打造全新世界观，让你更</p>
-                <p>爱你的生活</p>
+        <div id="main6" class="main6">
+            <div class="main6-left"></div>
+            <div class="main6-right">
+                <h2>新世界/<span>01</span></h2>
+                <div class="main6-content">
+                    <p>新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                    <p>新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                    <p>新世界是个新世界新世界是个新世界新世界是个新世界</p>
+                    <p>新世界是个新世界新世界是个新世界</p>
                 </div>
-                <div class="main2-splitline"></div>  
+                <div class="main6-link"><a href="#">更多详情</a></div>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
         </div>
-        <div class="main2-content2">
-            <div class="icon"></div>
-            <div class="content">
-                <div>
-                <p>丰富多彩的公益活动，发</p>
-                <p>挥新世界的主人公意识</p>
-                </div>
-                <div class="main2-splitline"></div>  
-            </div>   
+        <div class="main7">
+            <div class="main7-left">
+                <h3>新时代 <span>关于爱生活的我们</span></h3>
+                <hr />
+                <a href="">查看更多</a>
+            </div>
+            <div class="main7-mid">
+                <h3>新时代 <span>关于爱生活的我们</span></h3>
+                <hr />
+                <a href="">查看更多</a>
+            </div>
+            <div class="main7-right"></div>
         </div>
-        <div class="main2-content3">
-            <div class="icon"></div>
-            <div class="content">
-                <div>
-                <p>时尚的新理念，超前体验</p>
-                <p>未知的生活</p>
+        <div id="main8" class="main8">
+            <h2>成为我们的志愿者</h2>
+            <hr />
+            <p>新世界的大家庭需要每一个爱生活的人的加入，如果你够年轻，有梦想，有激情 <span>那就不要犹豫，快来加入我们，成为改变所有人生活的人</span></p>
+            <div class="main8-content">
+                    <ul>
+                        <li>
+                            <h3>新世界志愿者协议</h3>
+                            <p>加入新世界志愿者的人员必须遵守中华人民共共和国的 相关法律法规，并且本着平等资源的原则......</p>
+                            <a href="#main8">more</a>
+                        </li>
+                        <li>
+                            <h3>新世界志愿者权利</h3>
+                            <p>新世界志愿者享受新世界内部所有资源共享的权利，并
+                            且享受所在四新世界活动的优先参与资格......</p>
+                            <a href="#main8">more</a>                            
+                        </li>
+                        <li>
+                            <h3>更多条款</h3>
+                            <a href="#main8">more</a>                            
+                        </li>
+                    </ul>
+                <div class="main8-content-form">
+                    <form action="#header" method="get">
+                        <dl>
+                            <dd><input type="text" value="姓名：" /><input type="text" value="年龄："/></dd>
+                            <dd><input type="text" value="联系方式：" /><input type="text" value="联系地址：" /></dd>
+                            <dd><textarea name="" id="" cols="30" rows="10">请简单描述您梦想的生活：</textarea></dd>
+                            <dd><input type="submit" value="提交申请" /></dd>
+                        </dl>
+                    </form>
                 </div>
-                <div class="main2-splitline"></div>  
-            </div>  
-        </div>
-        <div class="main2-content4">
-            <div class="icon"></div>
-            <div class="content">
-                <div>
-                <p>完善的培养机制，培养你</p>
-                <p>全新的世界观</p>
-                </div>
-            </div>  
-        </div>
-    </div>
-    <div class="main3">
-        <img src="img/task_1_1_7/3_icon.png" alt="书籍图片" />
-        <p>关于新世界，你不知道的还有什么？</p>
-    </div>
-    <div class="main4">
-        <div class="main4-mask">
-            <p>查找新世界城市活动信息</p>
-            <p></p>
-            <p>每个城市都有不同的活动信息，请自主查询您所需要了解的城市</p>
-            <div class="main4-select">
-                <form action="">
-                    <div class="select-style">
-                    <select name="contrny" id="contrny">
-                        <option value="china">中国</option>
-                        <option value="japan">日本</option>
-                    </select>
-                    </div>
-                    <div class="select-style">
-                    <select name="area" id="area">
-                        <option value="liaoning">辽宁</option>
-                        <option value="hebei">河北</option>
-                    </select>
-                    </div>
-                    <div class="select-style">
-                    <select name="city" id="city">
-                        <option value="dalian">大连</option>
-                        <option value="shenyang">沈阳</option>
-                    </select>
-                    </div>
-                    <input type="submit" value="搜索"/>
-                </form>
             </div>
         </div>
-    </div>
-</body>
+        <div id="about" class="about">
+            <h3>联系我们</h3>
+            <p>为了更好的获取我们最新的产品资讯，您可以留下您的电子邮箱快速订阅我们的产品资讯<span>也可以通过以下任何方式关注我们动态</span></p>
+            <form action="#header" method="get">
+                 <input class="email-input" type="text" value="someone@email.com" />
+                 <input class="email-submit" type="submit" value="提交" />
+            </form>
+            <ul>
+                <li><a href="www.qq.com"><img src="img/task_1_1_7/about_icon_01_qq.png" height="25" width="24" alt="" /></a></li>
+                <li><a href="www.weibo.com"><img src="img/task_1_1_7/about_icon_02_sina.png" height="25" width="29" alt="" /></a></li>
+                <li><a href="www.twitter.com"><img src="img/task_1_1_7/about_icon_03_twitter.png" height="25" width="29" alt="" /></a></li>
+                <li><a href="www.liujinyan.com"><img src="img/task_1_1_7/about_icon_04.png" height="25" width="24" alt="" /></a></li>
+            </ul>
+        </div>
+        <div class="footer">
+            <p>@2016新世界</p>
+        </div>
+        <div class="backtotop"><a href="#header">Back to top ↑</a></div>
+    </body>
 </html>
