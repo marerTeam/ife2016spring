@@ -1,0 +1,187 @@
+/* 
+* @Author: liujinyan
+* @Date:   2016-03-12 16:06:13
+* @Last Modified by:   liujinyan
+* @Last Modified time: 2016-03-28 22:46:03
+*/
+@charset "UTF-8";
+table{
+    margin: 50px auto;
+}
+table tr td{
+    border: 2px solid #fff;
+}
+thead{
+    background-color: #000;
+    color: #fff;
+}
+tbody tr:nth-child(-n+3){
+    color: red;
+}
+tbody tr:nth-child(odd){
+    background-color: #fff;
+}
+tbody tr:nth-child(even){
+    background-color: #ccc;
+}
+input[type="text"]{
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 20px;
+}
+
+input[type="text"]:focus{
+    animation:animation1 2s 1 both;
+    -webkit-animation:animation1 2s 1 both; /* Safari 和 Chrome */
+}
+@keyframes animation1{
+    from{ width: 150px; }
+    to{ width: 250px; }
+}
+@keyframes lunbo1{
+  0% { left: 200%;
+        z-index: 3;
+    }
+  25% { left: 100%;
+        z-index: 3;
+  }
+  50% { left: 100%;
+        z-index: 3;
+  }
+  75% { left: 0%;
+        z-index: 3;}
+  100% { left: 200%;
+        z-index: -1;
+  }
+}
+@keyframes lunbo2{
+  0% { left: 200%;
+        z-index: 2;
+    }
+  25% { left: 100%;
+        z-index: 2;
+    }
+  50% { left: 100%;
+        z-index: 2;
+    }
+  75% { left: 0%;
+        z-index: 2;
+    }
+  100% { left: -100%;
+        z-index: 2;
+    }
+}
+.lunbo{
+    position: relative;
+    margin: 50px auto 0 auto;
+    width: 250px;
+    height: 100px;
+    overflow: hidden;
+}
+.imgs{
+    height: 100px;
+    width: 750px;
+}
+.img1{
+    position:absolute;
+    width: 250px;
+    height: 100px;
+    left: 200%;
+    background-color: green;
+    margin-left:-100%;
+    animation:lunbo1 8s infinite;
+    -webkit-animation:lunbo1 8s infinite; /* Safari 和 Chrome */
+    z-index: 3;
+}
+.img2{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    left: 100%;
+    background-color: blue;
+    animation:lunbo2 8s infinite;
+    -webkit-animation:lunbo2 8s infinite; /* Safari 和 Chrome */
+    z-index: 2;
+}
+.img3{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    z-index: 1;
+}
+
+.bt1,.bt2,.bt3{
+    text-align: center;
+    background-color: #ccc;
+}
+.bt1:hover {
+    z-index: 1000;    
+}
+.bt2:hover {
+    z-index: 1000;    
+}
+.bt3:hover {
+    z-index: 1000;    
+}
+.bt1:hover div{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    bottom: -1px;
+    right: -56px;
+    background-color: green;
+    z-index: -1;
+}
+.bt2:hover div{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    bottom: -1px;
+    right: -31px;
+    background-color: blue;
+    z-index: -1;
+}
+.bt3:hover div{
+    position:absolute;
+    width: 250px;
+    height: 250px;
+    bottom: -1px;
+    right: -6px;
+    background-color: yellow;
+    z-index: -1;
+}
+.bt1{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    margin-right: 55px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+.bt2{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    margin-right: 30px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}
+.bt3{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 18px;
+    height: 18px;
+    border: none;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    z-index: 999;
+}

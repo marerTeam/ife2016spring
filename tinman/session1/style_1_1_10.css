@@ -1,0 +1,76 @@
+/* 
+* @Author: liujinyan
+* @Date:   2016-03-12 16:06:13
+* @Last Modified by:   liujinyan
+* @Last Modified time: 2016-03-28 12:28:36
+*/
+@charset "utf-8";
+
+body{
+    background-color: #ccc;
+}
+.container{
+    padding: 20px;
+}
+.container div{
+    width: 148px;
+}
+.div1{
+    height: 120px;
+    border: 1px #f00 solid;
+}
+.div2{
+    height: 100px;
+    border: 1px #f00 solid;
+}
+.div3{
+    height: 40px;
+    border: 1px #f00 solid;
+}
+.div4{
+    height: 200px;
+    border: 1px #00f solid;
+}
+@media screen and (min-width: 641px){
+.container{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div1{
+    order: 1;
+}
+.div2{
+    order: 2;
+}
+.div3{
+    order: 3;
+}
+.div4{
+    order: 4;
+}
+}
+@media screen and (max-width: 640px){
+.container{
+    display: -webkit-flex; /* Safari */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+}
+.div1{
+    order: 2;
+}
+.div2{
+    order: 3;
+}
+.div3{
+    order: 4;
+}
+.div4{
+    order: 1;
+}
+}
