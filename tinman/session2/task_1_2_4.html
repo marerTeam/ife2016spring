@@ -1,0 +1,46 @@
+<!DOCTYPE>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 04</title>
+  <!-- 
+    坑之 script链接位置 任务提供的代码因为HTML还未加载 就先执行了JS所以 无法取到DOM元素
+    js外链挪到页脚 或者在js 中处理init方法 使之在网页加载完成之后再执行
+   -->
+    <script src="task_1_2_4.js"></script>
+    <link rel="stylesheet" type="text/css" href="task_1_2_4.css" />
+  </head>
+<body>
+  <div>
+    <table>
+        <tr>
+            <td class="label"><label for="aqi-city-input">城市名称：</label></td>
+            <td><input id="aqi-city-input" type="text"></td>
+            <td>请输入中英文字符</td>
+        </tr>
+        <tr>
+            <td class="label"><label for="aqi-value-input">空气质量指数：</label></td>
+            <td><input id="aqi-value-input" type="text"></td>
+            <td>请输入非零正整数</td>
+        </tr>
+        <tr>
+            <td class="button" colspan="3"><button id="add-btn">确认添加</button></td>
+        </tr>
+    </table>
+    <br>
+  </div>
+  <table id="aqi-table">
+  <!-- 
+    <tr>
+      <td>城市</td><td>空气质量</td><td>操作</td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+    <tr>
+      <td>北京</td><td>90</td><td><button>删除</button></td>
+    </tr>
+   -->
+</table>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IFE JavaScript Task 02</title>
+    </head>
+    <body>
+        <h3>污染城市列表</h3>
+        <ul id="aqi-list1">
+            <!--
+                            <li>第一名：福州（样例），10</li>
+            <li>第二名：福州（样例），10</li> -->
+        </ul>
+        <ul id="aqi-list2">
+            <!--
+                            <li>第一名：福州（样例），10</li>
+            <li>第二名：福州（样例），10</li> -->
+        </ul>
+        <script type="text/javascript">
+                var aqiData = [
+                ["北京", 90],
+                ["上海", 50],
+                ["福州", 10],
+                ["广州", 50],
+                ["成都", 90],
+                ["西安", 100]
+                ];
+                (function () {
+                /*
+                在注释下方编写代码
+                遍历读取aqiData中各个城市的数据
+                将空气质量指数大于60的城市显示到aqi-list的列表中
+                */
+                //1、冒泡排序法
+                    var relArray = new Array();
+                    var index = 0;
+                    for(i=0;i<aqiData.length;i++){
+                        if(aqiData[i][1] > 60){
+                            relArray[index] = aqiData[i];
+                            index++;
+                        }
+                    }
+
+                    for(n=0;n<relArray.length-1;n++){
+                        for(m=0;m<relArray.length-1;m++){
+                            if(relArray[m+1][1] > relArray[m][1]){
+                            var tmpData;
+                            tmpData = relArray[m];
+                            relArray[m] = relArray[m+1];
+                            relArray[m+1] = tmpData;
+                            }
+                        }
+                    }
+
+                    for(j=0;j<relArray.length;j++){
+                        var ul = document.getElementById("aqi-list1");
+                        var li = document.createElement("li")
+                        li.innerHTML = "第"+inttostring(j+1)+"名："+ relArray[j][0] + ", 得分：" + relArray[j][1];
+                        ul.appendChild(li);
+                    }
+                    //2、sort排序
+                    //定义排序规则
+                    function sortnum(a,b){
+                        return b[1]-a[1];
+                    }
+                    //排序
+                    aqiData.sort(sortnum);
+                    //输出
+                    for(i=0;i<aqiData.length;i++){
+                        if(aqiData[i][1] > 60){
+                            var ul = document.getElementById("aqi-list2");
+                            var li = document.createElement("li")
+                            li.innerHTML = "第"+inttostring(i+1)+"名："+ aqiData[i][0] + ", 得分：" + aqiData[i][1];
+                            ul.appendChild(li);
+                        }                        
+                    }
+                    //转换数字到汉字
+                    function inttostring(str){
+                        var str = str+"";
+                        str = str.replace("1","一");
+                        str = str.replace("2","二");
+                        str = str.replace("3","三");
+                        str = str.replace("4","四");
+                        str = str.replace("5","五");
+                        str = str.replace("6","六");
+                        str = str.replace("7","七");
+                        str = str.replace("8","八");
+                        str = str.replace("9","九");
+                        str = str.replace("0","零");
+                        return str;
+                    }
+                })();
+        </script>
+    </body>
+</html>

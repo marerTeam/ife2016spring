@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>IFE JavaScript Task 01</title>
+    </head>
+    <body>
+        <label>请输入北京今天空气质量：<input id="aqi-input" type="text"></label>
+        <label for="button1" >实现方式1：</label>
+        <button id="button1" onclick="clickbtn1()" >确认填写</button>
+        <label for="button2" >实现方式2：</label>
+        <button id="button2" >确认填写</button>
+        <label for="button3" >实现方式3：</label>
+        <button id="button3" >确认填写</button>
+        <div>您输入的值是：<span id="aqi-display">尚无录入</span></div>
+        <script type="text/javascript">
+                    //方法1 最普通的绑定事件方法 在button 里添加onclick属性，值为调用函数名称
+                    //但是任务并不希望这样做。
+                    function clickbtn1(){
+                    var noinputmsg = "尚无录入";
+                    var inputtext = document.getElementById("aqi-input").value;
+                        if(inputtext.length>0){
+                            document.getElementById("aqi-display").innerHTML = inputtext;
+                        }else{
+                            document.getElementById("aqi-display").innerHTML = noinputmsg;
+                        }
+                    }
+
+                    (function(){
+                    /*
+                    在注释下方写下代码
+                    给按钮button绑定一个点击事件
+                    在事件处理函数中
+                    获取aqi-input输入的值，并显示在aqi-display中
+                    */
+                        function clickbtn(){
+                        var noinputmsg = "尚无录入";
+                        var inputtext = document.getElementById("aqi-input").value;
+                            if(inputtext.length>0){
+                                document.getElementById("aqi-display").innerHTML = inputtext;
+                            }else{
+                                document.getElementById("aqi-display").innerHTML = noinputmsg;
+                            }
+                        }
+                    //方法1 通过getElementById 获得button 元素将函数绑定到button元素的 onclick 属性中。
+                        document.getElementById("button2").onclick = clickbtn;
+                    //方法3 通过getElementById 获得button 元素 并为button添加监听事件 类型 click
+                    //因为添加监听事件需要解决浏览器兼容的问题，增加addEvent函数
+                        function addEvent(obj,type,handle){
+                        try{  // Chrome、FireFox、Opera、Safari、IE9.0及其以上版本
+                            obj.addEventListener(type,handle,false);
+                            }catch(e){
+                                try{  // IE8.0及其以下版本
+                                    obj.attachEvent('on' + type,handle);
+                                }catch(e){  // 早期浏览器
+                                    obj['on' + type] = handle;
+                                }
+                            }
+                        }
+                        addEvent(document.getElementById("button3"),"click",clickbtn);
+                    })();
+        </script>
+    </body>
+</html>
